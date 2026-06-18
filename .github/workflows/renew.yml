@@ -2,8 +2,8 @@ name: ACLClouds Auto-Renew
 
 on:
   schedule:
-    # Every 5 hours
-    - cron: '0 */5 * * *'
+    # 更改为每 2 小时运行一次，防止错过续期窗口
+    - cron: '0 */2 * * *'
   workflow_dispatch:
 
 jobs:
